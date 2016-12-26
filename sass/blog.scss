@@ -123,7 +123,8 @@ Formatting in the post itself, for each tag
     display: block;
     width: 400px;
     height: 300px;
-    margin-bottom: 32px;
+    margin: 16px;
+    margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -205,6 +206,7 @@ Formatting in the post itself, for each tag
     margin-right: 2px;
     font-size: .9em;
     white-space: nowrap;
+    // word-break: break-all;
 }
 
 .post blockquote {
@@ -541,5 +543,6 @@ table tr.radial_5_icons>td>table img {
     .post code {
         white-space:normal;
         overflow-wrap: break-word;
+        word-break: break-word;
     }
 }
