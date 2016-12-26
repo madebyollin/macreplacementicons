@@ -215,6 +215,9 @@ main {
     text-align: center; }
     header .nav {
       float: none;
-      text-align: center; } }
+      text-align: center; }
+
+  footer {
+    font-weight: 400; } }
 
 /*# sourceMappingURL=base.css.map */

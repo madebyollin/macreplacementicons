@@ -47,3 +47,10 @@
         overflow: visible;
     }
 }
+
+// Mobile
+@media (max-device-width: 960px), (max-width: 960px) {
+    #gallery>h2 {
+        font-weight: 400;
+    }
+}
