@@ -4,14 +4,14 @@
   background-size: cover;
   background-position: center center; }
   .freeHero .secondaryButton {
-    border-color: #8ad104; }
+    border-color: transparent; }
 
 .paidHero {
   background: url("/images/paidHero.png");
   background-size: cover;
   background-position: center center; }
   .paidHero .secondaryButton {
-    border-color: #1889f5; }
+    border-color: transparent; }
 
 main {
   height: 80%;

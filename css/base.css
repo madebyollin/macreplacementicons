@@ -14,7 +14,8 @@
 a {
   font-weight: inherit;
   color: #e0e0e0;
-  font-size: inherit; }
+  font-size: inherit;
+  transition: .2s ease all; }
   a:hover {
     color: white;
     text-decoration: none;
@@ -30,12 +31,12 @@ p {
   hyphens: auto; }
 
 html {
-  background: #181818;
+  background: black;
   height: 100%;
   position: relative; }
 
 body {
-  background: #181818;
+  background: black;
   height: 100%;
   padding-bottom: 48px;
   position: relative;
@@ -77,24 +78,27 @@ header {
         font-weight: 600;
         border-bottom: 2px solid #e0e0e0; }
       header .nav a[href='/'].selected {
-        border-bottom-color: #d11f04; }
-      header .nav a[href='/free'].selected {
-        border-bottom-color: #8ad104; }
-      header .nav a[href='/paid'].selected {
         border-bottom-color: #1889f5; }
+      header .nav a[href='/free'].selected {
+        border-bottom-color: transparent; }
+      header .nav a[href='/paid'].selected {
+        border-bottom-color: transparent; }
       header .nav a[href='/articles'].selected {
         border-bottom-color: #c004b2; }
 
 footer {
-  font-weight: 300;
+  font-weight: 200;
   text-align: center;
-  color: #606060;
+  color: #303030;
   display: block;
   padding: 1.5em;
-  width: 100%; }
+  width: 100%;
+  font-size: 16px; }
   footer a {
-    color: #a0a0a0;
+    color: #606060;
     padding: 8px 4px; }
+    footer a:hover {
+      color: #e0e0e0; }
 
 main {
   background: black;
@@ -111,7 +115,7 @@ main {
     main section.wide {
       width: 100%;
       height: 384px;
-      background: black;
+      background-color: black;
       border-radius: 0; }
       main section.wide h2 {
         height: 384px;
@@ -147,9 +151,9 @@ main {
       bottom: 0;
       margin-bottom: 16px; }
       main section.wide > div .mainButton, main section.hero > div .mainButton {
-        color: #181818;
+        color: black;
         transition: .2s ease all;
-        box-shadow: 0 8px 0 -8px white transparent;
+        box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.5);
         background: white;
         display: inline-block;
         text-align: center;
@@ -160,11 +164,11 @@ main {
         padding: 12px 24px;
         font-weight: 600;
         font-size: 1.2em;
-        width: 360px;
+        width: 352px;
         display: block;
         margin: 16px auto; }
         main section.wide > div .mainButton:hover, main section.hero > div .mainButton:hover {
-          box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.3);
+          box-shadow: 0 12px 64px 0 rgba(0, 0, 0, 0.75);
           transform: scale(1.1);
           background-color: white;
           cursor: pointer;
@@ -178,7 +182,7 @@ main {
           font-size: .75em; }
       main section.wide > div .secondaryButton, main section.hero > div .secondaryButton {
         transition: .2s ease all;
-        box-shadow: 0 8px 0 -8px white transparent;
+        box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.5);
         background: black;
         display: inline-block;
         text-align: center;
@@ -192,7 +196,7 @@ main {
         padding: 12px 24px;
         font-weight: 400; }
         main section.wide > div .secondaryButton:hover, main section.hero > div .secondaryButton:hover {
-          box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 12px 64px 0 rgba(0, 0, 0, 0.75);
           transform: scale(1.1);
           background-color: #1a1a1a;
           cursor: pointer;

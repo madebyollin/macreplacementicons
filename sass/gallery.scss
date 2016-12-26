@@ -2,15 +2,28 @@
 @import 'anim';
 @import url('base.css');
 
+.macoshero {
+    background-image: url('/images/macos_core.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
 #gallery {
-    background: $bg;
+    background: $bbg;
     padding: 16px;
+
     &>h2 {
         color: $mg;
         font-size: 16px;
         font-weight: 200;
         margin-top: 16px;
         margin-bottom: 32px;
+        &>a {
+            color: $mg;
+            &:hover {
+                color: $fg;
+            }
+        }
     }
     &>div {
         max-width: 800px;

@@ -1,6 +1,11 @@
 @import url("base.css");
+.macoshero {
+  background-image: url("/images/macos_core.jpg");
+  background-size: cover;
+  background-position: center center; }
+
 #gallery {
-  background: #181818;
+  background: black;
   padding: 16px; }
   #gallery > h2 {
     color: #606060;
@@ -8,6 +13,10 @@
     font-weight: 200;
     margin-top: 16px;
     margin-bottom: 32px; }
+    #gallery > h2 > a {
+      color: #606060; }
+      #gallery > h2 > a:hover {
+        color: #e0e0e0; }
   #gallery > div {
     max-width: 800px;
     margin: 0 auto; }

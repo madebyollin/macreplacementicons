@@ -21,6 +21,7 @@ a {
     font-weight: inherit;
     color: $fg;
     font-size: inherit;
+    transition: .2s ease all;
 
     &:hover {
         color: $ffg;
@@ -126,21 +127,22 @@ header {
 }
 
 footer {
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
-    color: $mg;
+    color: mix($mg, $bg, 50%);
     display: block;
     padding: 1.5em;
     width: 100%;
+    font-size: 16px;
     // opacity: .5;
 
     a {
-        color: mix($mg, $fg, 50%);
+        color: $mg;
         // @include clickable();
         padding: 8px 4px;
-        // &:hover {
-        //     @include clickableHover();
-        // }
+        &:hover {
+            color: $fg;
+        }
     }
 }
 
@@ -169,7 +171,7 @@ main {
         &.wide {
             width: 100%;
             height: 384px;
-            background: $bbg;
+            background-color: $bbg;
             border-radius: 0;
             h2 {
                 height: 384px;
@@ -223,7 +225,7 @@ main {
                 padding: 12px 24px;
                 font-weight: 600;
                 font-size: 1.2em;
-                width: 360px;
+                width: 352px;
                 display: block;
                 margin: 16px auto;
 
