@@ -1,0 +1,256 @@
+@import 'constants';
+@import 'anim';
+
+// Default Properties
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: $mg;
+    text-decoration: none;
+    font-family: 'Avenir Next', 'San Francisco', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+*::selection {
+    background: $selection;
+}
+
+a {
+    font-weight: inherit;
+    color: $fg;
+    font-size: inherit;
+
+    &:hover {
+        color: $ffg;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+p {
+    // Maximum hyphenation
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+html {
+    background: $bg;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    background: $bg;
+    height: 100%;
+    padding-bottom: 48px;
+    position: relative;
+    min-width: 480px;
+}
+
+// Navigation
+header {
+    min-height: 64px;
+    padding: 8px 16px;
+
+    .logo {
+        display: inline-block;
+        font-weight: 200;
+        text-transform: title;
+        height: 32px;
+        padding: 8px;
+        margin-bottom: 8px;
+
+        a {
+            color: transparent !important;
+            width: 192px;
+            display: block;
+            height: 32px;
+            background: url("/images/mri.png");
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .nav {
+        float: right;
+        display: block;
+
+        li {
+            display: inline;
+            vertical-align: middle;
+        }
+
+        a {
+            color: $fg;
+            line-height: 48px;
+            padding: 8px 16px;
+            font-weight: 300;
+
+            // &[href='/paid'] {
+            //     display: none;
+            // }
+            &:hover {
+                color: $ffg;
+            }
+
+            &.selected {
+                font-weight: 600;
+                border-bottom: 2px solid $fg;
+            }
+
+            &[href='/'].selected {
+                border-bottom-color: $home;
+            }
+
+            &[href='/free'].selected {
+                border-bottom-color: $free;
+            }
+
+            &[href='/paid'].selected {
+                border-bottom-color: $paid;
+            }
+
+            &[href='/articles'].selected {
+                border-bottom-color: $articles;
+            }
+        }
+    }
+}
+
+footer {
+    font-weight: 300;
+    text-align: center;
+    color: $mg;
+    display: block;
+    padding: 1.5em;
+    width: 100%;
+    // opacity: .5;
+
+    a {
+        color: mix($mg, $fg, 50%);
+        // @include clickable();
+        padding: 8px 4px;
+        // &:hover {
+        //     @include clickableHover();
+        // }
+    }
+}
+
+a.iconDownload {
+    // // @include clickable();
+    // &:hover {
+    //     @include clickableHover();
+    // }
+}
+
+main {
+    background: black;
+    text-align: center;
+    font-size: 0;
+    position: relative;
+    // Content Panes
+
+    section {
+        border-radius: $border-radius;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+
+        &.wide {
+            width: 100%;
+            height: 384px;
+            background: $bbg;
+            border-radius: 0;
+            h2 {
+                height: 384px;
+                width: 10000000px; // it works, don't judge
+                display: table-cell;
+                 vertical-align: middle;
+                font-weight: 100;
+                font-size: 64px;
+                // padding: 12.5% 0;
+                position: relative;
+                color: $ffg;
+            }
+        }
+
+        &.medium {
+            margin: 8px;
+
+            width: 512px;
+            height: 288px;
+            background: black;
+            & > a {
+                font-weight: 100;
+                height: 288px;
+                width: 512px;
+                display: table-cell;
+             vertical-align: middle;
+                text-align: center;
+                padding: 0px 64px;
+                // padding-top: 80px;
+                font-size: 36px;
+                color: $ffg;
+            }
+        }
+
+        &.small {
+            width: 128px;
+            height: 128px;
+            border-radius: 0;
+        }
+
+        &.wide > div,
+        &.hero > div {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            margin-bottom: 16px;
+
+            .mainButton {
+                color: $bg;
+                @include button($ffg);
+                padding: 12px 24px;
+                font-weight: 600;
+                font-size: 1.2em;
+                width: 360px;
+                display: block;
+                margin: 16px auto;
+
+                & > div {
+                    font-size: .75em;
+                }
+            }
+
+            .secondaryButton {
+                @include button($bbg);
+                width: 304px;
+                display: block;
+                margin: 8px auto;
+                padding: 12px 24px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+// Mobile
+@media (max-device-width: 960px), (max-width: 960px) {
+    header {
+        text-align: center;
+
+        .nav {
+            float: none;
+            text-align: center;
+        }
+    }
+}

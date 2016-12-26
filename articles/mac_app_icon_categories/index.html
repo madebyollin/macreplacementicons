@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mac App Icon Categories</title>
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+    <header>
+        <span class="logo"><a href="/">Mac Replacement Icons</a></span>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/free">Free Icons</a></li>
+            <li><a href="/paid">Client Icons</a></li>
+            <li><a href="/articles" class="selected">Articles</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="wide">
+            <h2 class="mac_app_icon_categories">
+                Mac App Icon Categories
+            </h2>
+        </section>
+        <div class="blog">
+            <div class="post">
+
+                <p>Apple uses four important conventions to represent an Application's basic structure in the design of its icon:</p>
+                <img alt="1: Objects (Apps that do things), 2: Tools (Apps that create things), 3: Browsers (Apps that present things), 4: Utilities (Apps that configure things)" src="categories_overview_2x.png" style="width:768px;height:256px;" />
+                <p>This article will familiarize you with these four conventional icon types, and give you a solid understanding of which one to use for your App. Each section also includes a grid template to assist in drawing icons of that type.</p>
+                <a class="download" target="_blank" href="Mac_Icon_Grids_And_Templates.zip">Download All Grids + Templates</a>
+
+                <p>The final section explains how to build beautiful App icons that <em>don't</em> use the conventional structure for their App type, but still look at home on macOS.</p>
+                </p>
+
+                <h3><span class="red">1. Objects:</span> Apps that do things</h3>
+                <p>Tilted object icons represent self-contained Applications that perform a task while they are running, and stop performing that task when they stop running.</p>
+
+                <p>The common trait of these Apps is that they have a <em>state</em>, not an output. The user doesn't have to think about opening or writing files; they just launch the App, work for a bit, and quit the App once they're done.</p>
+
+                <p>Project-focused studio Apps like iMovie and Logic also fit into this category.</p>
+
+                <img style="width:576px;height:576px;" alt="Calculator, Calendar, Contacts, Dictionary, Font Book, iMovie, Logic Pro X, Notes, Reminders" src="objects_2x.png" />
+
+                <p>Objects in these icons are tilted <span class="red">9&deg;</span> along the z axis, and the camera is rotated <span class="red">15&deg;</span> down from center along the x axis<span class="footnote">There is also a very subtle horizontal camera tilt of <span class="red">~2.6&deg;</span>                    in the stock icons.</span>.</p>
+                <a class="download red" target="_blank" href="Object_Icon_Grid.png">Object Icon Grid.png</a>
+                <a class="download red" target="_blank" href="Object_Icon_Template.blend">Object Icon Template.blend</a>
+
+                <h3><span class="green">2. Tools:</span> Apps that create things</h3>
+                <p>Tools tilted on top of files represent Applications that enable the user to create or modify files.</p>
+
+                <p>The common trait of these Apps is that they can only perform their function while they are operating on a file. If no file is currently being edited, all controls (besides those related to file creation) are inactive or hidden.</p>
+                <img style="width:576px;height:384px;" alt="iBooks Author, Pages, Preview, TextEdit, Script Editor, Xcode" src="tools_2x.png" />
+
+                <p>Files in these icons are tilted <span class="green">9&deg;</span> along the z axis, tools are rotated <span class="green">-16&deg;</span> and located right of center, and the camera is rotated <span class="green">15&deg;</span> down from
+                    center along the x axis<span class="footnote">Again, there is also a slight horizontal camera tilt of <span class="green">~2.6&deg;</span> in the stock icons.</span>.</p>
+
+                <a class="download green" target="_blank" href="Tool_Icon_Grid.png">Tool Icon Grid.png</a>
+                <a class="download green" target="_blank" href="Tool_Icon_Template.blend">Tool Icon Template.blend</a>
+
+                <h3><span class="blue">3. Browsers:</span> Apps that present things</h3>
+                <p>Disks with glyphs inside represent Applications that allow you to browse through and view third-party content.</p>
+
+                <p>The common trait of these Apps is that they cannot create content, but they allow the user to view content which originates from external sources.</p>
+
+                <img style="width:576px;height:576px;" alt="iTunes, App Store, Safari, Dashboard, Airport Utility, Launchpad, Time Machine, Photos, iBooks" src="browsers_2x.png" />
+
+                <p>Browser icons are circular and viewed from directly above. The glyph inside the disk is symbolic of the type of content the App presents.</p>
+
+                <a class="download blue" target="_blank" href="Browser_Icon_Grid.png">Browser Icon Grid.png</a>
+
+                <h3><span class="purple">4. Utilities:</span> Apps that configure things</h3>
+                <p>These Applications allow the user to interact with and configure their operating system.</p>
+
+                <p>Icons for Utilities that let you interact with things are bordered metal with a central display, while icons for Utilities that let you configure things are solid metal with exposed portions in the center.</p>
+                <img style="width:576px;height:384px;" alt="Activity Monitor, Dock, Terminal, Speech, Settings, Voiceover Utility, Disk Utility, Keychain Access, FileVault" src="utilities_2x.png" />
+
+                <p>Utility icons are rectangular and viewed from directly above.</p>
+
+                <a class="download purple" target="_blank" href="Utility_Icon_Grid.png">Utility Icon Grid.png</a>
+
+                <h3>5. Breaking Conventions:</h3>
+
+                <p>If your icon metaphor isn't working in the conventional perspective for its type, you can use one of these options. They don't have strong symbolic associations, but they are still perfectly acceptable icon structures in macOS:</p>
+
+                <img style="width:672px;height:576px;" alt="Top (Standard: Messages, Finder, Keychain Access), Tilted (Rare: Disk Utility, Printer, Trash), Tilted Angled (Very Rare: KEXT, Chess, Motion)" src="breaking_conventions_examples_2x.png" />
+
+                <p>Here are some tips for making an unconventionally-structured icon look as natural as possible:</p>
+                <ul>
+                    <li>Use a <em>very</em> high focal length (~500mm). This is a convention in all macOS icons that helps icons look better in groups. If you're working without 3D software, start with an orthogonal design and adjust it slightly to add perspective.</li>
+                    <li>Properly fill the canvas so your icon doesn't look too small (or too big) around other icons. This will sometimes require rounding off shapes or approaching the upper edge of the canvas. Never approach the bottom edge of the canvas
+                        too closely; save some space for your drop shadow.</li>
+                    <li>Limit your icon to one or two distinct structural components, with a maximum of three. If your icon includes more than three components, consider how you can simplify your icon while retaining meaning.</li>
+                </ul>
+
+                <hr />
+                <p>If you or know someone you know at Apple can <strong>a)</strong> confirm/refute my value of 500mm for the Focal Length or <strong>b)</strong> explain the ~2.6&deg; horizontal camera tilt in Object/Tool icons, please let me know!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="http://www.madebyollin.com">Made by Ollin</a> /
+        <a href="https://www.dribbble.com/ollin">Dribbble</a> /
+        <a href="https://www.twitter.com/madebyollin">Twitter</a> /
+        <a href="https://www.github.com/madebyollin">GitHub</a>
+    </footer>
+</body>
+
+</html>

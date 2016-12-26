@@ -1,0 +1,447 @@
+@import url("base.css");
+a[href="replacing_macos_system_icons"],
+h2.replacing_macos_system_icons {
+  background-image: url("/articles/replacing_macos_system_icons/index.jpg") !important;
+  background-position: center center;
+  background-size: cover; }
+
+a[href="mac_app_icon_categories"],
+h2.mac_app_icon_categories {
+  background-image: url("/articles/mac_app_icon_categories/index.jpg") !important;
+  background-position: center center;
+  background-size: cover; }
+
+a[href="creating_32px_icons"],
+h2.creating_32px_icons {
+  background-image: url("/articles/creating_32px_icons/index.jpg") !important;
+  background-position: center center;
+  background-size: cover; }
+
+a[href="icon_design_resources"],
+h2.icon_design_resources {
+  background-image: url("/articles/icon_design_resources/index.jpg") !important;
+  background-position: center center;
+  background-size: cover; }
+
+a[href="mac_icon_customization_guide"],
+h2.mac_icon_customization_guide {
+  background-image: url("/articles/mac_icon_customization_guide/index.jpg") !important;
+  background-position: center center;
+  background-size: cover; }
+
+a[href="self_teaching_art"],
+h2.self_teaching_art {
+  background-image: url("/articles/self_teaching_art/index.jpg") !important;
+  background-position: center center;
+  background-size: cover; }
+
+a[href="lighting_in_icons"],
+h2.lighting_in_icons {
+  background-image: url("/articles/lighting_in_icons/index.jpg") !important;
+  background-position: center center;
+  background-size: cover; }
+
+.blog {
+  width: 100%;
+  background: white;
+  border-radius: 0;
+  position: relative;
+  display: block; }
+
+.post {
+  max-width: 864px;
+  padding: 32px;
+  margin: 0 auto; }
+
+/* ****************************************************
+Formatting in the post itself, for each tag
+**************************************************** */
+.post * {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8); }
+
+/* ******** Headers ******** */
+.post h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 8px;
+  color: black;
+  font-weight: 600; }
+
+.post h3 {
+  font-size: 1.1em;
+  text-align: left;
+  margin-bottom: 16px;
+  color: black;
+  padding-top: 8px;
+  border-top: 1px solid silver;
+  font-weight: 600; }
+
+.post h4 {
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 16px;
+  color: black;
+  padding-top: 8px;
+  font-weight: 500; }
+
+.post .table_header {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: -16px;
+  color: black;
+  font-weight: 600;
+  background: rgba(192, 192, 192, 0.25);
+  padding: 4px;
+  border: 1px solid silver;
+  border-bottom: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+/* ******** Various ******** */
+.post img {
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.post img.w_512 {
+  width: 512px;
+  height: 384px; }
+
+.post img.half_height {
+  width: 400px;
+  height: 150px; }
+
+.post strong {
+  font-weight: 700; }
+
+.post em {
+  font-weight: 600;
+  color: inherit; }
+
+.post p {
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+
+.post a {
+  color: #1889f5;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid; }
+
+.post a:hover {
+  color: #0230B2; }
+
+.post span {
+  font-weight: inherit;
+  font-size: inherit; }
+
+.post hr {
+  border: 0;
+  border-top: 1px solid silver;
+  margin-bottom: 32px; }
+
+.post sup {
+  color: inherit; }
+
+.post sup a {
+  text-decoration: none;
+  font-size: .75em;
+  color: inherit; }
+
+.post code {
+  font-weight: 500;
+  color: black;
+  background: rgba(0, 0, 0, 0.01);
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  margin: -4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: .9em;
+  white-space: nowrap; }
+
+.post blockquote {
+  text-align: left;
+  padding-left: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  right: 0px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  color: rgba(0, 0, 0, 0.6);
+  border-left: 2px solid rgba(0, 0, 0, 0.3); }
+
+/* ******** Special Formatting ******** */
+.post .aside_text {
+  display: block;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: .8em; }
+
+.post .aside_text a {
+  font-size: inherit; }
+
+.post .red,
+.post .green,
+.post .blue,
+.post .purple,
+.post .grey {
+  border-color: inherit; }
+
+.post .red {
+  color: #d11f04; }
+
+.post .green {
+  color: #8ad104; }
+
+.post .blue {
+  color: #1889f5; }
+
+.post .purple {
+  color: #c004b2; }
+
+.post .grey {
+  color: silver; }
+
+.post .red_underline {
+  border-bottom: 1px solid #d11f04; }
+
+.post .green_underline {
+  border-bottom: 1px solid #8ad104; }
+
+.post .blue_underline {
+  border-bottom: 1px solid #1889f5; }
+
+.post .purple_underline {
+  border-bottom: 1px solid #c004b2; }
+
+.post .grey_underline {
+  border-bottom: 1px solid silver; }
+
+.post .download {
+  display: inline-block;
+  border: 2px solid currentColor;
+  background: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin: 0px 8px;
+  margin-bottom: 32px; }
+
+.post .download img {
+  float: left; }
+
+.post .download:hover {
+  color: black; }
+
+/* ******** Footnotes ******** */
+.post .footnote {
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 500;
+  padding: 12px;
+  margin: -12px; }
+
+.post .footnote:hover {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 4px 16px -4px rgba(0, 0, 0, 0.5);
+  width: auto;
+  height: auto;
+  max-width: 400px; }
+
+.post .footnote:before {
+  content: "\00a0 * \00a0";
+  color: #1889f5;
+  display: inline;
+  font-size: 1rem; }
+
+/* ******** Lists ******** */
+.post ul {
+  list-style-type: disc;
+  margin-left: 64px;
+  margin-top: -16px;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.8); }
+
+.post ol {
+  list-style-type: decimal;
+  margin-left: 64px;
+  margin-top: -16px;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.8); }
+
+.post li {
+  text-align: left;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8); }
+
+/* ******** Tables ******** */
+.post table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+  border: 1px solid silver;
+  width: 100%; }
+
+.post td.masked_image {
+  padding: 0px;
+  border: black; }
+
+.post td.masked_image_vertical {
+  padding: 0px;
+  background: black;
+  border: black; }
+
+.post td {
+  text-align: left;
+  padding: 16px; }
+
+.post th {
+  padding: 16px;
+  color: black; }
+
+.post .masked_image div {
+  min-height: 192px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.039) 1.25%, rgba(0, 0, 0, 0.15) 2.5%, rgba(0, 0, 0, 0.32) 3.75%, rgba(0, 0, 0, 0.51) 5%, rgba(0, 0, 0, 0.7) 6.25%, rgba(0, 0, 0, 0.86) 7.5%, rgba(0, 0, 0, 0.97) 8.75%, black 10%, black 90%, rgba(0, 0, 0, 0.97) 91.25%, rgba(0, 0, 0, 0.86) 92.5%, rgba(0, 0, 0, 0.7) 93.75%, rgba(0, 0, 0, 0.51) 95%, rgba(0, 0, 0, 0.32) 96.25%, rgba(0, 0, 0, 0.15) 97.5%, rgba(0, 0, 0, 0.039) 98.75%, transparent 100%);
+  color: transparent; }
+
+.post table img {
+  width: auto;
+  height: auto; }
+
+.post table p {
+  margin-left: 32px;
+  margin-right: 32px; }
+
+.post table ul {
+  margin-left: 64px; }
+
+.post .masked_image_vertical div {
+  width: 100%;
+  min-height: 192px;
+  background-position: center;
+  -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%, black 20%, black 80%, transparent 100%);
+  color: transparent; }
+
+.post td.cell_img {
+  vertical-align: middle;
+  text-align: center; }
+
+.post td.cell_img img {
+  margin-left: auto;
+  margin-right: auto; }
+
+.post table .aside_text {
+  position: relative;
+  margin: 0px;
+  display: block;
+  color: silver;
+  font-size: .8rem; }
+
+.post table tr.row_color_tags td {
+  text-align: center;
+  padding: 4px; }
+
+.post table tr.row_color_tags td span {
+  font-size: .8rem; }
+
+.post table tr.row_color_tags td .green,
+.post table tr.row_color_tags td .red,
+.post table tr.row_color_tags td .purple {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px; }
+
+.post table tr.credits_row td {
+  text-align: center;
+  font-size: .6em;
+  color: silver; }
+
+.post table img {
+  width: auto;
+  height: auto; }
+
+/* ******** Arrow Gradient Tables ******** */
+table tr.arrow_gradient td {
+  padding-left: 32px;
+  padding-right: 32px; }
+
+table tr.arrow_gradient td > div {
+  padding: 0px;
+  margin: 0px;
+  height: 64px;
+  position: relative;
+  background: url("../blog/8_icon_design_guidelines/images/arrow_gradient_left.png"), url("../blog/8_icon_design_guidelines/images/arrow_gradient_middle.png"), url("../blog/8_icon_design_guidelines/images/arrow_gradient_right.png");
+  background-repeat: no-repeat;
+  background-position: left, center, right;
+  background-size: auto, 100% 128px, auto; }
+
+table tr.arrow_gradient_label td {
+  color: silver;
+  font-size: .8em;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+/* ******** Radial 5 Icons Tables ******** */
+table tr.radial_5_icons {
+  height: 256px;
+  overflow: hidden; }
+
+table tr.radial_5_icons > td {
+  text-align: center;
+  padding: 0px;
+  background: url("../blog/8_icon_design_guidelines/images/radial_5_background_blue.png"), url("../blog/8_icon_design_guidelines/images/radial_5_background_purple.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 64% auto, 25% auto;
+  background-position: center, center; }
+
+table tr.radial_5_icons > td > table {
+  border: 0px;
+  padding: 0px;
+  margin: 0px; }
+
+table tr.radial_5_icons > td > table {
+  border: 0px;
+  padding: 0px; }
+
+table tr.radial_5_icons > td > table td {
+  padding: 0px;
+  margin: 0px;
+  width: 20%; }
+
+table tr.radial_5_icons > td > table img {
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*# sourceMappingURL=blog.css.map */

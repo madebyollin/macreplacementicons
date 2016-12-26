@@ -1,0 +1,74 @@
+@mixin button($baseColor) {
+    transition: .2s ease all;
+    box-shadow: 0 8px 0 -8px white rgba(0,0,0,0);
+    background: $baseColor;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 16px;
+    border-radius: 64px;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        box-shadow: 0 4px 16px 0 fade-out(darken($baseColor, 0%), .7);
+        transform: scale(1.1);
+        background-color: lighten($baseColor, 10%);
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    &:active {
+        box-shadow: 0 8px 16px -8px rgba(0,0,0,0);
+        transform: scale(0.9);
+        background-color: darken($baseColor, 10%);
+        text-decoration: none;
+    }
+}
+
+@mixin scaleHover() {
+    transition: .2s ease all;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    &:active {
+        transform: scale(0.9);
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+// @mixin clickable() {
+//     -webkit-transform-origin: center center;
+//     transform-origin: center center;
+//     display: inline-block;
+//     transition: .1s ease transform;
+//     // padding: 0;
+// }
+// @mixin clickableHover() {
+//     -webkit-animation-name: swing;
+//     animation-name: swing;
+//     animation-duration: .5s;
+//     @keyframes swing {
+//         20% {
+//             transform: rotate3d(0, 0, 1, -5deg) scale(1.1);
+//         }
+//
+//         40% {
+//             transform: rotate3d(0, 0, 1, 5deg) scale(1.05);
+//         }
+//
+//         60% {
+//             transform: rotate3d(0, 0, 1, -2.5deg) scale(1.025);
+//         }
+//
+//         80% {
+//             transform: rotate3d(0, 0, 1, 2.5deg) scale(1.0);
+//         }
+//
+//         to {
+//             transform: rotate3d(0, 0, 1, 0deg);
+//         }
+//     }
+// }

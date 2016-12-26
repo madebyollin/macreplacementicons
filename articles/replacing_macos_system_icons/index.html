@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Replacing macOS System Icons</title>
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+    <header>
+        <span class="logo"><a href="/">Mac Replacement Icons</a></span>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/free">Free Icons</a></li>
+            <li><a href="/paid">Client Icons</a></li>
+            <li><a href="/articles" class="selected">Articles</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="wide">
+            <h2 class="replacing_macos_system_icons">
+                Replacing macOS System Icons
+            </h2>
+        </section>
+        <div class="blog">
+            <div class="post">
+                <p>
+                    The <a href="https://developer.apple.com/library/prerelease/mac/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_11.html#//apple_ref/doc/uid/TP40016227-DontLinkElementID_19">System Integrity Protection</a> feature of macOS improves security, but also prevents users from customizing many system icons. Here's how to replace system icons in macOS.</p>
+
+                <ol>
+                    <li>Hold <code>⌘ + R</code> while restarting your Mac to enter Recovery Mode.<br /><br /><img style="width:640px;height:320px;" src="1.png" /></li>
+                    <li>Open <code>Menubar>Utilities>Terminal</code> and type the command <code>csrutil disable</code> to turn System Integrity Protection off, then restart.<br /><br /><img style="width:640px;height:450px;" src="2.png"
+                        /></li>
+                    <li>Use the Get Info panel or <a href="http://www.freemacsoft.net/liteicon/">LiteIcon</a> to replace the icons for App Store, Finder<span class="footnote">To change Finder's icon in the Dock, you must also replace <code>finder.png</code> and <code>finder@2x.png</code> in <code style="line-height:3em !important;">/System/Library/CoreServices/Dock.app/Contents/Resources/</code></span>,&nbsp;
+                        &nbsp; Mail, Safari, and any other system apps you want to customize.<br /><br /><img alt="Drag the .icns file onto the 32px Get Info thumbnail of the app you want to customize" style="width:440px;height:400px;" src="4.gif"
+                        />
+
+                    </li>
+                    <li>Hold <code>⌘ + R</code> while restarting your Mac to enter Recovery Mode again.<br /><br /><img style="width:640px;height:320px;" src="1.png" /></li>
+                    <li>Open <code>Menubar>Utilities>Terminal</code> and run the command <code>csrutil enable</code> to turn System Integrity Protection back on, then restart normally.<br /><br /><img style="width:640px;height:450px;" src="3.png"
+                        /> Your system is now protected, and your icons are customized! If some replacements haven't appeared yet, try clearing the icon cache (either <a href="http://furbo.org/2015/01/19/clearing-the-icon-services-cache-in-yosemite/">manually</a>                        or with LiteIcon).</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="http://www.madebyollin.com">Made by Ollin</a> /
+        <a href="https://www.dribbble.com/ollin">Dribbble</a> /
+        <a href="https://www.twitter.com/madebyollin">Twitter</a> /
+        <a href="https://www.github.com/madebyollin">GitHub</a>
+    </footer>
+</body>
+
+</html>

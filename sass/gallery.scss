@@ -1,0 +1,36 @@
+@import 'constants';
+@import 'anim';
+@import url('base.css');
+
+#gallery {
+    background: $bg;
+    padding: 16px;
+    &>h2 {
+        color: $mg;
+        font-size: 16px;
+        font-weight: 200;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+    &>div {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .icon {
+        box-sizing:content-box;
+        width:128px;
+        height:128px;
+        padding: 8px;
+
+        &.clickable {
+            @include scaleHover();
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+        overflow: visible;
+    }
+}

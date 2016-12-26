@@ -1,0 +1,33 @@
+@import url("base.css");
+.freeHero {
+  background: url("/images/freeHero.png");
+  background-size: cover;
+  background-position: center center; }
+  .freeHero .secondaryButton {
+    border-color: #8ad104; }
+
+.paidHero {
+  background: url("/images/paidHero.png");
+  background-size: cover;
+  background-position: center center; }
+  .paidHero .secondaryButton {
+    border-color: #1889f5; }
+
+main {
+  height: 80%;
+  position: relative;
+  padding: 8px; }
+  main .hero {
+    position: relative;
+    height: 100%;
+    width: 45%;
+    max-height: 640px;
+    margin: 0px 8px; }
+
+@media (max-device-width: 800px), (max-width: 800px) {
+  main section {
+    width: 100%;
+    height: 45%;
+    margin: 8px; } }
+
+/*# sourceMappingURL=index.css.map */

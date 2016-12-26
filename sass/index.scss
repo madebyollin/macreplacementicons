@@ -1,0 +1,46 @@
+@import 'constants';
+@import url( 'base.css');
+
+.freeHero {
+    background: url('/images/freeHero.png');
+    background-size: cover;
+    background-position: center center;
+
+    .secondaryButton {
+        border-color: $free;
+    }
+}
+
+.paidHero {
+    background: url('/images/paidHero.png');
+    background-size: cover;
+    background-position: center center;
+
+    .secondaryButton {
+        border-color: $paid;
+    }
+}
+
+main {
+    height: 80%;
+    position: relative;
+    padding: 8px;
+    // Content Panes
+    .hero {
+        position: relative;
+        height: 100%;
+        width: 45%;
+        max-height: 640px;
+        margin: 0px 8px;
+    }
+}
+// Mobile
+@media (max-device-width: 800px), (max-width: 800px) {
+    main {
+        section {
+            width: 100%;
+            height: 45%;
+            margin: 8px;
+        }
+    }
+}
