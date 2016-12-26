@@ -447,6 +447,10 @@ table tr.radial_5_icons > td > table img {
 @media (max-device-width: 960px), (max-width: 960px) {
   .post img {
     width: 100% !important;
-    height: inherit !important; } }
+    height: inherit !important; }
+
+  .post code {
+    white-space: normal;
+    overflow-wrap: break-word; } }
 
 /*# sourceMappingURL=blog.css.map */

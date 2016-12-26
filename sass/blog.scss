@@ -537,4 +537,9 @@ table tr.radial_5_icons>td>table img {
         width: 100% !important;
         height:inherit !important;
     }
+
+    .post code {
+        white-space:normal;
+        overflow-wrap: break-word;
+    }
 }
