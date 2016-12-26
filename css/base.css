@@ -131,7 +131,8 @@ main {
         color: white; }
     main section.medium {
       margin: 8px;
-      width: 512px;
+      min-width: 480px;
+      max-width: 512px;
       height: 288px;
       background: black; }
       main section.medium > a {
@@ -218,6 +219,11 @@ main {
       text-align: center; }
 
   footer {
-    font-weight: 400; } }
+    font-weight: 400; }
+
+  section.medium {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 0; } }
 
 /*# sourceMappingURL=base.css.map */

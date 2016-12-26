@@ -444,4 +444,9 @@ table tr.radial_5_icons > td > table img {
   margin-left: auto;
   margin-right: auto; }
 
+@media (max-device-width: 960px), (max-width: 960px) {
+  .post img {
+    width: 100% !important;
+    height: inherit !important; } }
+
 /*# sourceMappingURL=blog.css.map */
