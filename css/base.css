@@ -47,7 +47,7 @@ header {
   padding: 8px 32px; }
   header .logo {
     display: inline-block;
-    font-weight: 200;
+    font-weight: lighter;
     text-transform: title;
     height: 32px;
     padding: 8px;
@@ -90,7 +90,7 @@ header {
         border-bottom-color: #c004b2; }
 
 footer {
-  font-weight: 200;
+  font-weight: lighter;
   text-align: center;
   color: #303030;
   display: block;

@@ -62,7 +62,7 @@ header {
 
     .logo {
         display: inline-block;
-        font-weight: 200;
+        font-weight: lighter;
         text-transform: title;
         height: 32px;
         padding: 8px;
@@ -130,7 +130,7 @@ header {
 }
 
 footer {
-    font-weight: 200;
+    font-weight: lighter;
     text-align: center;
     color: mix($mg, $bg, 50%);
     display: block;
