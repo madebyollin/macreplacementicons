@@ -5,6 +5,7 @@
 OUTPUT_FILE="output.html"
 FOLDER="icons"
 > $OUTPUT_FILE
+rm "$FOLDER"/*.png
 
 # For each one, retrieve the 256x256 png, fix the name, and add the formatted html to the output
 for ICNS_FILE in $(ls -t "$FOLDER"/*.icns); do
@@ -20,8 +21,16 @@ for ICNS_FILE in $(ls -t "$FOLDER"/*.icns); do
     iconutil --convert iconset "$ICNS_FILE"
     PNG_PATH="$FOLDER/${ICNS_FILE_NAME}.iconset/icon_128x128@2x.png"
     if [ ! -f "$PNG_PATH" ]; then
+        echo "couldn't find 128x128@2x for $ICNS_FILE_NAME"
         PNG_PATH="$FOLDER/${ICNS_FILE_NAME}.iconset/icon_256x256.png"
     fi
+    if [ ! -f "$PNG_PATH" ]; then
+        echo "couldn't find 256x256 for $ICNS_FILE_NAME"
+        PNG_PATH="$FOLDER/${ICNS_FILE_NAME}.iconset/icon_512x512.png"
+        # Sips prints stuff to console ;_;
+        sips -Z 256 "$PNG_PATH" > /dev/null
+    fi
+
     mv "$PNG_PATH" "$FOLDER/${ICNS_FILE_NAME}.png"
     PNG_PATH="$FOLDER/${ICNS_FILE_NAME}.png"
     rm -rf "$FOLDER/${ICNS_FILE_NAME}.iconset"

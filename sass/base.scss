@@ -58,7 +58,7 @@ body {
 // Navigation
 header {
     min-height: 64px;
-    padding: 8px 16px;
+    padding: 8px 32px;
 
     .logo {
         display: inline-block;
@@ -67,14 +67,16 @@ header {
         height: 32px;
         padding: 8px;
         margin-bottom: 8px;
+        vertical-align: middle;
 
         a {
             color: transparent !important;
-            width: 192px;
+            font-size: 0;
+            width: 112px;
             display: block;
             height: 32px;
             background: url("/images/mri.png");
-            background-position: center center;
+            background-position: center top;
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -103,6 +105,7 @@ header {
             }
 
             &.selected {
+                color: $ffg;
                 font-weight: 600;
                 border-bottom: 2px solid $fg;
             }
