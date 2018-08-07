@@ -1,5 +1,5 @@
-@import 'constants';
-@import url('base.css');
+@import "constants";
+@import url("base.css");
 
 // I don't remember why it was necessary to put the background images on the h2 tags
 // But I guess it was?  I'm sure there was a reason
@@ -79,28 +79,27 @@ Formatting in the post itself, for each tag
 .post h2 {
     font-size: 1.5rem;
     text-align: left;
-    margin-bottom: 8px;
+    margin-top: 32px;
+    margin-bottom: 16px;
     color: black;
     font-weight: 600;
 }
 
-
 .post h3 {
     font-size: 1.1em;
     text-align: left;
-    margin-bottom: 16px;
+    margin-top: 24px;
+    margin-bottom: 12px;
     color: black;
-    padding-top: 8px;
-    border-top: 1px solid rgb(192, 192, 192);
     font-weight: 600;
 }
 
 .post h4 {
     font-size: 1em;
     text-align: left;
-    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
     color: black;
-    padding-top: 8px;
     font-weight: 500;
 }
 
@@ -110,7 +109,7 @@ Formatting in the post itself, for each tag
     margin-bottom: -16px;
     color: black;
     font-weight: 600;
-    background: rgba(192, 192, 192, .25);
+    background: rgba(192, 192, 192, 0.25);
     padding: 4px;
     border: 1px solid rgb(192, 192, 192);
     border-bottom: 0px;
@@ -151,7 +150,7 @@ Formatting in the post itself, for each tag
 .post p {
     text-align: left;
     line-height: 1.5;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
@@ -187,24 +186,24 @@ Formatting in the post itself, for each tag
 
 .post sup a {
     text-decoration: none;
-    font-size: .75em;
+    font-size: 0.75em;
     color: inherit;
 }
 
 .post code {
     font-weight: 500;
     color: black;
-    background: rgba(0, 0, 0, .01);
+    background: rgba(0, 0, 0, 0.01);
     padding: 2px;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     margin: -4px;
     padding-left: 8px;
     padding-right: 8px;
     margin-left: 2px;
     margin-right: 2px;
-    font-size: .9em;
+    font-size: 0.9em;
     white-space: nowrap;
     // word-break: break-all;
 }
@@ -226,8 +225,8 @@ Formatting in the post itself, for each tag
 .post .aside_text {
     display: block;
     margin-bottom: 16px;
-    color: rgba(0, 0, 0, .5);
-    font-size: .8em;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.8em;
 }
 
 .post .aside_text a {
@@ -309,7 +308,7 @@ Formatting in the post itself, for each tag
     height: 1em;
     overflow: hidden;
     cursor: pointer;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 500;
     padding: 12px;
     margin: -12px;
@@ -318,7 +317,8 @@ Formatting in the post itself, for each tag
 .post .footnote:hover {
     background: rgba(255, 255, 255, 1);
     border-radius: 5px;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, .1), 0px 4px 16px -4px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1),
+        0px 4px 16px -4px rgba(0, 0, 0, 0.5);
     width: auto;
     height: auto;
     max-width: 400px;
@@ -335,7 +335,7 @@ Formatting in the post itself, for each tag
 .post ul {
     list-style-type: disc;
     margin-left: 64px;
-    margin-top: -16px;
+    margin-top: 0px;
     margin-bottom: 16px;
     color: rgba(0, 0, 0, 0.8);
 }
@@ -391,7 +391,27 @@ Formatting in the post itself, for each tag
     min-height: 192px;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.039) 1.25%, rgba(0, 0, 0, 0.15) 2.5%, rgba(0, 0, 0, 0.32) 3.75%, rgba(0, 0, 0, 0.51) 5%, rgba(0, 0, 0, 0.70) 6.25%, rgba(0, 0, 0, 0.86) 7.5%, rgba(0, 0, 0, 0.97) 8.75%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.97) 91.25%, rgba(0, 0, 0, 0.86) 92.5%, rgba(0, 0, 0, 0.70) 93.75%, rgba(0, 0, 0, 0.51) 95%, rgba(0, 0, 0, 0.32) 96.25%, rgba(0, 0, 0, 0.15) 97.5%, rgba(0, 0, 0, 0.039) 98.75%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: -webkit-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.039) 1.25%,
+        rgba(0, 0, 0, 0.15) 2.5%,
+        rgba(0, 0, 0, 0.32) 3.75%,
+        rgba(0, 0, 0, 0.51) 5%,
+        rgba(0, 0, 0, 0.7) 6.25%,
+        rgba(0, 0, 0, 0.86) 7.5%,
+        rgba(0, 0, 0, 0.97) 8.75%,
+        rgba(0, 0, 0, 1) 10%,
+        rgba(0, 0, 0, 1) 90%,
+        rgba(0, 0, 0, 0.97) 91.25%,
+        rgba(0, 0, 0, 0.86) 92.5%,
+        rgba(0, 0, 0, 0.7) 93.75%,
+        rgba(0, 0, 0, 0.51) 95%,
+        rgba(0, 0, 0, 0.32) 96.25%,
+        rgba(0, 0, 0, 0.15) 97.5%,
+        rgba(0, 0, 0, 0.039) 98.75%,
+        rgba(0, 0, 0, 0) 100%
+    );
     color: transparent;
 }
 
@@ -413,7 +433,13 @@ Formatting in the post itself, for each tag
     width: 100%;
     min-height: 192px;
     background-position: center;
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: -webkit-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0) 100%
+    );
     color: transparent;
 }
 
@@ -432,7 +458,7 @@ Formatting in the post itself, for each tag
     margin: 0px;
     display: block;
     color: rgb(192, 192, 192);
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .post table tr.row_color_tags td {
@@ -441,7 +467,7 @@ Formatting in the post itself, for each tag
 }
 
 .post table tr.row_color_tags td span {
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .post table tr.row_color_tags td .green,
@@ -456,7 +482,7 @@ Formatting in the post itself, for each tag
 
 .post table tr.credits_row td {
     text-align: center;
-    font-size: .6em;
+    font-size: 0.6em;
     color: rgb(192, 192, 192);
 }
 
@@ -466,19 +492,22 @@ Formatting in the post itself, for each tag
 }
 /* ******** Arrow Gradient Tables ******** */
 
-table tr.arrow_gradient {}
+table tr.arrow_gradient {
+}
 
 table tr.arrow_gradient td {
     padding-left: 32px;
     padding-right: 32px;
 }
 
-table tr.arrow_gradient td>div {
+table tr.arrow_gradient td > div {
     padding: 0px;
     margin: 0px;
     height: 64px;
     position: relative;
-    background: url('../blog/8_icon_design_guidelines/images/arrow_gradient_left.png'), url('../blog/8_icon_design_guidelines/images/arrow_gradient_middle.png'), url('../blog/8_icon_design_guidelines/images/arrow_gradient_right.png');
+    background: url("../blog/8_icon_design_guidelines/images/arrow_gradient_left.png"),
+        url("../blog/8_icon_design_guidelines/images/arrow_gradient_middle.png"),
+        url("../blog/8_icon_design_guidelines/images/arrow_gradient_right.png");
     background-repeat: no-repeat;
     background-position: left, center, right;
     background-size: auto, 100% 128px, auto;
@@ -486,7 +515,7 @@ table tr.arrow_gradient td>div {
 
 table tr.arrow_gradient_label td {
     color: rgb(192, 192, 192);
-    font-size: .8em;
+    font-size: 0.8em;
     text-align: center;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -499,49 +528,49 @@ table tr.radial_5_icons {
     overflow: hidden;
 }
 
-table tr.radial_5_icons>td {
+table tr.radial_5_icons > td {
     text-align: center;
     padding: 0px;
-    background: url('../blog/8_icon_design_guidelines/images/radial_5_background_blue.png'), url('../blog/8_icon_design_guidelines/images/radial_5_background_purple.png');
+    background: url("../blog/8_icon_design_guidelines/images/radial_5_background_blue.png"),
+        url("../blog/8_icon_design_guidelines/images/radial_5_background_purple.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 64% auto, 25% auto;
     background-position: center, center;
 }
 
-table tr.radial_5_icons>td>table {
+table tr.radial_5_icons > td > table {
     border: 0px;
     padding: 0px;
     margin: 0px;
 }
 
-table tr.radial_5_icons>td>table {
+table tr.radial_5_icons > td > table {
     border: 0px;
     padding: 0px;
 }
 
-table tr.radial_5_icons>td>table td {
+table tr.radial_5_icons > td > table td {
     padding: 0px;
     margin: 0px;
     width: 20%;
 }
 
-table tr.radial_5_icons>td>table img {
+table tr.radial_5_icons > td > table img {
     padding: 0px;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
 }
 
-
 // Mobile
 @media (max-device-width: 960px), (max-width: 960px) {
     .post img {
         width: 100% !important;
-        height:inherit !important;
+        height: inherit !important;
     }
 
     .post code {
-        white-space:normal;
+        white-space: normal;
         overflow-wrap: break-word;
         word-break: break-word;
     }

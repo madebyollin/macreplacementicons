@@ -178,7 +178,7 @@ main {
           cursor: pointer;
           text-decoration: none; }
         main section.wide > div .mainButton:active, main section.hero > div .mainButton:active {
-          box-shadow: 0 8px 16px -8px transparent;
+          box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0);
           transform: scale(0.9);
           background-color: #e6e6e6;
           text-decoration: none; }
@@ -206,7 +206,7 @@ main {
           cursor: pointer;
           text-decoration: none; }
         main section.wide > div .secondaryButton:active, main section.hero > div .secondaryButton:active {
-          box-shadow: 0 8px 16px -8px transparent;
+          box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0);
           transform: scale(0.9);
           background-color: black;
           text-decoration: none; }
