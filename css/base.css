@@ -90,7 +90,7 @@ header {
         border-bottom-color: #c004b2; }
 
 footer {
-  font-weight: lighter;
+  font-weight: 300;
   text-align: center;
   color: #303030;
   display: block;
@@ -125,7 +125,7 @@ main {
         width: 10000000px;
         display: table-cell;
         vertical-align: middle;
-        font-weight: 100;
+        font-weight: 300;
         font-size: 64px;
         position: relative;
         color: white; }
@@ -136,7 +136,7 @@ main {
       height: 288px;
       background: black; }
       main section.medium > a {
-        font-weight: 100;
+        font-weight: 300;
         height: 288px;
         width: 512px;
         display: table-cell;
