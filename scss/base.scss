@@ -130,7 +130,7 @@ header {
 }
 
 footer {
-    font-weight: lighter;
+    font-weight: 300;
     text-align: center;
     color: mix($mg, $bg, 50%);
     display: block;
@@ -181,7 +181,7 @@ main {
                 width: 10000000px; // it works, don't judge
                 display: table-cell;
                  vertical-align: middle;
-                font-weight: 100;
+                font-weight: 300;
                 font-size: 64px;
                 // padding: 12.5% 0;
                 position: relative;
@@ -197,7 +197,7 @@ main {
             height: 288px;
             background: black;
             & > a {
-                font-weight: 100;
+                font-weight: 300;
                 height: 288px;
                 width: 512px;
                 display: table-cell;
